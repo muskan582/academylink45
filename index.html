@@ -5,9 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landing page</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+    body {
+      background-color: #ffffff;
+      color: #111;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+
+    h1 {font-size:22px;margin-top:35px;text-transform:uppercase;}
+    h1 a {color:#0077ff;text-decoration:none;}
+    h1 a:hover {text-decoration:underline;}
+
+    p {font-size:15px;margin:8px 0;}
+
+    .timer {font-size:18px;margin-top:10px;font-weight:bold;color:#ff6600;}
+
+    .profile {display:flex;justify-content:center;align-items:center;margin:18px 0;}
+    .profile img {
+      width:160px;height:160px;border-radius:50%;object-fit:cover;
+      border:3px solid #0077ff;box-shadow:0 0 15px rgba(0,119,255,0.3);
+      transition:.3s;
+    }
+
+    .view-btn {
+      display:inline-block;padding:12px 28px;
+      background:linear-gradient(45deg,#0077ff,#00c6ff);
+      color:#fff;border-radius:30px;
+      font-weight:600;text-decoration:none;margin-top:10px;
+    }
+
+    h2 {color:#0077ff;margin-top:8px;font-size:18px;}
+    .footer {font-size:13px;margin-top:15px;opacity:0.8;}
+
+    .managed {
+      font-size:12px;
+      margin-top:10px;
+      opacity:0.85;
+    }
+    .managed a {
+      color:#0077ff;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .managed a:hover {text-decoration:underline;}
+
+    .disclaimer {
+      background:#f7f7f7;color:#555;font-size:12px;
+      padding:8px 10px;border-top:1px solid #ddd;
+      line-height:1.45;border-radius:8px 8px 0 0;
+    }
+
+    .footer-links {
+      font-size:13px;
+      display:flex;
+      justify-content:center;
+      gap:6px;
+      background:#f7f7f7;
+      padding-bottom:10px;
+    }
+
+    .footer-links a {
+      color:#0077ff;
+      text-decoration:none;
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1197758351847728');
+  fbq('track', 'PageView');
+  </script>
 </head>
+
 <body>
-<h1>DURBAN DADA INTERNATIONAL TIPPER</h1>
-<p>Landing page deployed on Vercel</p>
+
+<main>
+<h1>
+  <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
+    DURBAN DADA<br>
+    INTERNATIONAL TIPPER
+  </a>
+</h1>
+
+<p>🌍 Trusted International Sports Prediction Channel</p>
+
+<div class="timer"><span id="countdown">5</span> SECONDS</div>
+
+<div class="profile">
+  <img src="/image/jjjj.jpg" alt="Trading Logo" />
+</div>
+
+<h2>57,8765 Subscribers</h2>
+<p>📊 Smart Analysis • Live Updates • Winning Mindset</p>
+
+<a href="https://t.me/+hZ3Y_ovKTCthMTA9" class="view-btn">JOIN NOW FOR FREE</a>
+
+<p class="footer">💎 Precision. Power. Passion 🌍</p>
+
+<!-- ✅ Sponsored Credit Line -->
+<p class="managed">
+  Sponsored by
+  <a href="https://telegram.me/+TRlJl628l-FkMWE9" target="_blank">
+    DURBAN DADA INTERNATIONAL TIPPER
+  </a>
+</p>
+
+</main>
+
+<section class="disclaimer">
+<strong>Disclaimer:</strong> This is for educational & informational purposes only.  
+Trading involves risk. Do your own research.
+</section>
+
+<div class="footer-links">
+  <a href="https://telegram.me/+TRlJl628l-FkMWE9">Privacy Policy</a>
+  |
+  <a href="https://telegram.me/+TRlJl628l-FkMWE9">Contact Us</a>
+</div>
+
+<script>
+let countdown = 5;
+const timer = setInterval(() => {
+  document.getElementById("countdown").innerText = countdown;
+  if (countdown === 0) { clearInterval(timer); return; }
+  countdown--;
+}, 1000);
+</script>
+
 </body>
 </html>
